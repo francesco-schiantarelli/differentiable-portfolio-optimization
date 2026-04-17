@@ -4,7 +4,7 @@ A feed-forward neural network processes technical-indicator inputs for each asse
 From the simulated state trajectory, the model computes several differentiable trading-behaviour metrics (KPIs), such as average price paid, average holding time, total traded quantity, turnover rate, holding duration, position-change magnitude. These KPIs summarize the consequences of the model’s own preliminary decisions, to represents the portfolio composition, and are concatenated with the original input features and fed into a second feed-forward network. <br>
 This network generates the final portfolio daily allocation weights, now refined using feedback from simulated trading behaviour.
 The entire pipeline, including both networks, the simulator, and the KPI computations, is differentiable.<br>
-Using tf.GradientTape and Adam, the model directly maximizes:
+Using tf.GradientTape and Adam, the model directly maximizes:<br>
 •	Final Equity<br>
 •	Average Sharpe ratio, computed from the final simulated equity curve<br>
 •	Enforce constraints on assets allocation bias and maximum asset allocation<br>
