@@ -1,6 +1,6 @@
 If you are familiar with Quantiacs https://quantiacs.com/, this is a Quantiacs strategy. <br>
 <img width="1734" height="604" alt="{EACD8052-B131-40F0-80E6-20940D6BCCBC}" src="https://github.com/user-attachments/assets/dc1c35f4-32b9-470e-be65-21494e72d89d" />
-Equity calculate by me vs Quantics' equity:
+Equity calculated by me vs Quantiacs' equity:
 <img width="700" height="539" alt="{188A557A-405F-4FEF-84B4-37B902A3B807}" src="https://github.com/user-attachments/assets/7dc34e96-ccb0-404e-be31-25c41e9f8829" />
 <br>
 Designed and develop algo trading strategy on Quantiacs.com using TensorFlow (TF). The architecture is a differentiable, feedback-driven portfolio-optimization network (~120k parameters) that refines initial daily weight predictions by simulating trading behaviour and optimizing the final equity and Sharpe ratio Two-stage, end-to-end differentiable trading system that learns portfolio allocation weights by optimizing final equity and Sharpe ratio using gradient-based training. <br>
